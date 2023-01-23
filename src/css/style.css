@@ -1,5 +1,5 @@
 body {
-    background-image: url(/src/image/crepusculo.gif);
+    background-image: url(../image/crepusculo.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@ body {
 
 
 .card {
-    background-image:url(/src/image/sun.gif) ;
+    background-image:url(../image/sun.gif) ;
     /* background-color: #070d12; */
     width:370px;
     border: 2px solid #e126d9;

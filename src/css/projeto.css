@@ -19,7 +19,7 @@
 }
 
 .card-desktop {
-    background-image: url(/src/image/sun.gif);
+    background-image: url(../image/sun.gif);
     background-size: cover;
     width: 670px;
     border: 2.5px solid #e126d9;
@@ -37,7 +37,7 @@
 }
 
 .portfolio-mobile .card-mobile {
-    background-image: url(/src/image/sun.gif);
+    background-image: url(../image/sun.gif);
     background-size: cover;
     width: 370px;
     border: 2.5px solid #e126d9;
@@ -184,7 +184,7 @@
     font-size: 16px;
     font-weight: 500;
     position: absolute;
-    right: 45%;
+    right: 47%;
     margin-top: 85%;
     cursor: pointer;
 }

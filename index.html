@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=VT323&display=swap"
+        rel="stylesheet">
+         
+    <link rel="stylesheet" href="./src/css/reset.css" > 
+    <link rel="stylesheet" href="./src/css/style.css" > 
+    <link rel="stylesheet" href="./src/css/projeto.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>Mini portfólio</title>
+</head>
+
+<body>
+    <main class="card">
+
+        <div class="infos">
+            <div class="border">
+                <img src="./src/image/foto-perfil.jpg" alt="foto de perfil">
+            </div>
+            
+            <h1>Vitória Junker</h1>
+            <h2>Desenvolvedora Frontend Jr</h2>
+        </div>
+
+        <div class="content">
+            <ul class="tabs">
+                <li class="tab tab-sobre selected" id="sobre-mim">
+                    <img src="./src/image/planet.gif" alt="icone de sobre mim">
+                </li>
+
+                <li class="tab tab-rede" id="minhas-redes">
+                    <img src="./src/image/planetpsy.gif" alt="ícone de redes sociais">
+                </li>
+
+            </ul>
+
+            <div class="tabs-info">
+
+                <div class="menu selected" id="info-sobre-mim">
+                    <h3 class="sobre">Sobre</h3>
+
+                    <div class="description">
+                        <p>Oi! Meu nome é Vitória Junker, seja bem vindo(a) ao meu portfólio!</p>
+                      <br> 
+                        <p>
+                            Iniciei os estudos de programação há cerca de 6 meses, então ainda é um mundo novo e vasto
+                            a desbravar. Decidi começar focada em Frontend, e aqui estão alguns dos meus projetos
+                            de estudo com <span> HTML, CSS E Javascript.</span>
+                            <br>
+                            <br>
+                            Além da programação, também sou apaixonada por café, poesia, música e bambolê 😊
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu" id="info-minhas-redes">
+                    <h3 class="sobre">Minhas redes</h3>
+
+                    <ul class="social-media">
+                        <li>
+                            <button  class="portfolio" id="portfolio">Portfolio</button>
+                        </li>
+ 
+                        <div class="buttons-p ">
+                            <button id="desktop" class="button-portfolio">Desktop</button>
+                            <button id="mobile" class="button-portfolio">Mobile</button>
+                        </div>
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/vit%C3%B3riajunker/" target="_blank"
+                                class="linkedin">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Vitoria-Junker" target="_blank" class="github">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="portfolio-desktop">
+
+
+        <button id="inicio" class="inicio">Back</button>
+
+        <a href="#" class="seta-voltar opacidade" id="seta-voltar">
+            <img class="imagem-seta" src="./src/image/seta esquerda.png" alt="seta voltar">
+        </a>
+    
+        <div class="card-desktop">
+    
+    
+            <div class="projects show">
+                <div class="project">
+                    <a href="https://vitoria-junker.github.io/Multi-step-form/" target="_blank" >
+                        <img src="./src/image/multi-step.PNG" alt="multi-step-form" class="multi-step">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1>Multi Step form</h1>
+                    <p> Projeto do Frontend-Mentor para estudo e prática do Javascript.
+                        O desafio era desenvolver esse layout com varios steps e poder navegar entre eles.
+                        <br> <span>Tecnologias utilizadas:</span> <br>
+                        HTML, CSS e JS
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="projects">
+                <div class="project">
+                    <a href="https://vitoria-junker.github.io/Slider/#" target="_blank" >
+                        <img src="./src/image/slider.PNG" alt="slider" class="slider">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1> Slider de imagens</h1>
+                    <p> Exercício de Javascript do curso  DevQuest.
+                        O objetivo era fazer um slider de imagens utilizando Javascript.
+                        <br> <span>Tecnologias utilizadas:</span> <br>
+                        HTML, CSS e JS
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="projects">
+                <div class="project">
+                    <a href="https://vitoria-junker.github.io/Acorddion/" target="_blank" >
+                        <img src="./src/image/acorddion.PNG" alt="Acorddion" class="acorddion">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1>Projeto Acorddion</h1>
+                    <p> Exercício de Javascript do curso  DevQuest.
+                        O objetivo era fazer uma animação de efeito acorddion para abrir o item e mostrar o texto escondido.
+                        <br> <span>Tecnologias utilizadas:</span> <br>
+                        HTML, CSS e JS
+                    </p>
+                </div>
+            </div>
+    
+            <div class="projects">
+                <div class="project">
+                    <a href="https://vitoria-junker.github.io/QuestHTML-CSS-JS/" target="_blank" >
+                        <img src="./src/image/huddle.PNG" alt="landing page huddle" class="huddle">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1>Projeto Landing Page Huddle</h1>
+                    <p>Projeto do Frontend-Mentor feito para o Desafio de HTML e CSS avançado do curso DevQuest, para por em prática as habilidades com HTML e CSS. 
+                        <br> <span>Tecnologias utilizadas:</span> <br>
+                        HTML e CSS
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <a href="#" class="seta-avancar" id="seta-avancar">
+            <img class="imagem-seta" src="./src/image/seta direita.png" alt="seta avançar">
+        </a>
+    
+    </div>
+    
+    
+    
+    <div class="portfolio-mobile">
+
+        <button id="inicio-mobile" class="inicio-mobile">Back</button>
+
+        <a href="#" class="seta-voltar opacidade" id="seta-voltar">
+            <img class="imagem-seta" src="./src/image/seta esquerda.png" alt="seta voltar">
+        </a>
+    
+        <div class="card-mobile">
+           
+            <div class="projects-mobile">
+                <div class="project">
+                    <a href="https://vitoria-junker.github.io/Exercicio-NFT-cards/" target="_blank" >
+                        <img src="./src/image/nft-card.PNG" alt="nft-card-component">
+                    </a>
+                </div>
+                <div class="description-mobile">
+                    <h1>NFT preview card component</h1>
+                    <p>Projeto do Frontend-Mentor para praticar as habilidades com HTML e CSS
+                       <br> <span>Tecnologias utilizadas:</span> <br>
+                         HTML e CSS
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <a href="#" class="seta-avancar" id="seta-avancar">
+            <img class="imagem-seta" src="./src/image/seta direita.png" alt="seta avançar">
+        </a>
+    
+    </div>
+
+
+<script src="./src/js/index.js"></script>
+<script src="./src/js/projetos.js"></script>
+
+</body>
+
+</html>

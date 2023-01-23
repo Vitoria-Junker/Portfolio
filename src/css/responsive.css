@@ -64,3 +64,13 @@
     top:35%;
 }
 }
+
+@media (max-width: 440px){
+    .tabs-info .description {
+        font-size: 20px;
+        max-height: 180px;
+        overflow-y: auto ;
+        max-width: 300px;
+        
+    }
+}

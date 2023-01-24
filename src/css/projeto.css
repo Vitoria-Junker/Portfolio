@@ -101,6 +101,9 @@
     width: 585px;
 }
 
+.projects .project .form {
+    width: 500px;
+}
 
 .show {
     display: block;

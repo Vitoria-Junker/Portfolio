@@ -66,11 +66,47 @@
 }
 
 @media (max-width: 440px){
+
     .tabs-info .description {
         font-size: 20px;
         max-height: 180px;
         overflow-y: auto ;
         max-width: 300px;
+        text-align: center;
         
     }
+
+    .card-desktop {
+        background-image: url(../image/sun.gif);
+        background-size: cover;
+        max-width: 300px;
+        border: 2.5px solid #e126d9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 6px 10px 34px 7px rgba(0, 0, 0, 0.75);
+        display: flex;
+        text-align: center;
+    }
+
+    .card-desktop .description {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .inicio {
+        top:50%;
+    }
+
+    .card-mobile {
+        background-image: url(../image/sun.gif);
+        background-size: cover;
+        max-width: 300px;
+        border: 2.5px solid #e126d9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 6px 10px 34px 7px rgba(0, 0, 0, 0.75);
+        display: flex;
+        text-align: center;
+    }
+
 }

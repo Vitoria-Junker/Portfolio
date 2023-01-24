@@ -45,6 +45,8 @@
     overflow: hidden;
     box-shadow: 6px 10px 34px 7px rgba(0, 0, 0, 0.75);
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -201,10 +203,8 @@
     font-family: monospace;
     font-size: 16px;
     font-weight: 500;
-    position: absolute;
-    right: 49%;
-    margin-top: 45%;
     cursor: pointer;
+   
 }
 
 .inicio-mobile:hover{

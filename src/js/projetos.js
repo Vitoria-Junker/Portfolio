@@ -34,8 +34,8 @@ setaVoltar.addEventListener("click", function(){
      return;
     }
      projetoAtual++;
-     esconderprojetoAberto();
-     showProject();
+     esconderprojetoMobile();
+     showProjectMobile();
  });
  
  setaVoltarMobile.addEventListener("click", function(){
@@ -44,20 +44,34 @@ setaVoltar.addEventListener("click", function(){
              return;
          }
      projetoAtual--;
-     esconderprojetoAberto();
-     showProject();
+     esconderprojetoMobile();
+     showProjectMobile();
     
   });
 
 function showProject() {
     projects[projetoAtual].classList.add('show');
+    
+}
+
+function showProjectMobile() {
+    
     projectsMobile[projetoAtual].classList.add('show-mobile');
 }
 
+
+
 function esconderprojetoAberto(){
     const projetoAberto = document.querySelector('.show');
-    const projetoAbertoMobile = document.querySelector('.show-mobile');
     projetoAberto.classList.remove('show');
+    
+}
+
+
+function esconderprojetoMobile(){
+    
+    const projetoAbertoMobile = document.querySelector('.show-mobile');
+
     projetoAbertoMobile.classList.remove('show-mobile');
 }
 

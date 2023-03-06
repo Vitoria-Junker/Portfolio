@@ -109,7 +109,10 @@
     width: 500px;
 }
 
-
+.projects .project .img {
+    width: 500px;
+    height: 300px;
+}
 .project a:hover {
     opacity: 0.8;
 }

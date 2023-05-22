@@ -1,6 +1,7 @@
 # Portfolio
 Este é o repositório do meu projeto de Portfolio, uma aplicação desenvolvida em Next.js que possui funcionalidades para visualizar informações sobre mim, exibir projetos provenientes de um banco de dados em tempo real e cadastrar novos projetos.
 
+
 ![Imagem do portfólio](https://firebasestorage.googleapis.com/v0/b/portf0lio-2b546.appspot.com/o/images%2Fporfolio-img.png?alt=media&token=704c816e-bfcf-4d5c-9bee-73f37a0c2577)
 
 ## Funcionalidades
@@ -20,3 +21,5 @@ Firebase Storage: Foi escolhido para lidar com o upload de imagens para a criaç
 Tailwind CSS: Foi utilizado como biblioteca de estilos para facilitar a construção e personalização do design da aplicação.
 Heroku: Foi utilizado para o deploy da API criada com Node.js, garantindo que a aplicação esteja disponível online.
 Vercel: Foi utilizado para o deploy do front-end desenvolvido em Next.js, permitindo que a aplicação seja facilmente acessível na web.
+
+###Deploy: https://portfolio-vitoria-three.vercel.app/

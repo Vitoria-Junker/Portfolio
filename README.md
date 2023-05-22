@@ -1,38 +1,22 @@
+# Portfolio
+Este é o repositório do meu projeto de Portfolio, uma aplicação desenvolvida em Next.js que possui funcionalidades para visualizar informações sobre mim, exibir projetos provenientes de um banco de dados em tempo real e cadastrar novos projetos.
 
+![Imagem do portfólio](https://firebasestorage.googleapis.com/v0/b/portf0lio-2b546.appspot.com/o/images%2Fporfolio-img.png?alt=media&token=704c816e-bfcf-4d5c-9bee-73f37a0c2577)
 
-## Getting Started
+## Funcionalidades
+- Visualizar informações sobre mim
+- Visualizar uma lista de projetos obtidos do banco de dados em tempo real
+- Cadastrar um novo projeto no banco de dados com acesso restrito
+- Login com GitHub ou Google 
 
-First, run the development server:
+![Projetos](https://firebasestorage.googleapis.com/v0/b/portf0lio-2b546.appspot.com/o/images%2Fprojects.png?alt=media&token=c99cefee-f27a-4e80-bbc7-0cb550677cbd)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Ferramentas Utilizadas
+Next.js: Foi escolhido como framework principal devido à sua facilidade de desenvolvimento, renderização do lado do servidor (SSR) e suporte a rotas estáticas.
+Node.js: Foi utilizado para criar a API que consome o banco de dados Realtime Database.
+Realtime Database: Foi escolhido como banco de dados para armazenar os projetos devido à sua capacidade de atualização em tempo real e integração fácil com o Node.js.
+NextAuth: Foi utilizado para lidar com a autenticação na aplicação, permitindo que apenas eu tenha acesso à funcionalidade de cadastrar novos projetos.
+Firebase Storage: Foi escolhido para lidar com o upload de imagens para a criação de novos projetos, devido à sua facilidade de uso e integração com o Next.js.
+Tailwind CSS: Foi utilizado como biblioteca de estilos para facilitar a construção e personalização do design da aplicação.
+Heroku: Foi utilizado para o deploy da API criada com Node.js, garantindo que a aplicação esteja disponível online.
+Vercel: Foi utilizado para o deploy do front-end desenvolvido em Next.js, permitindo que a aplicação seja facilmente acessível na web.

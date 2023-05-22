@@ -33,7 +33,7 @@ export default function ProjectsPage() {
         style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)" }}
       >
         <h1 className="text-lg md:text-3xl font-sans pb-12">What I Did</h1>
-        <ul className="grid grid-cols-1 text-center gap-12 md:grid-cols-3 mb-8">
+        <ul className="grid grid-cols-1 text-center gap-12 md:grid-cols-2 lg:grid-cols-3 mb-8">
           {projects.map((project) => (
             <li
               key={project.id}

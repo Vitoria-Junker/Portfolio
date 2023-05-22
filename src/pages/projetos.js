@@ -54,7 +54,7 @@ export default function ProjectsPage() {
           ))}
         </ul>
         {showNewProjectLink && (
-          <Link href="/newProject" className="pb-16 hover:scale-110">
+          <Link href="/newProject" className="pb-16">
             New Project
           </Link>
         )}

@@ -22,4 +22,4 @@ Tailwind CSS: Foi utilizado como biblioteca de estilos para facilitar a constru�
 Heroku: Foi utilizado para o deploy da API criada com Node.js, garantindo que a aplicação esteja disponível online.
 Vercel: Foi utilizado para o deploy do front-end desenvolvido em Next.js, permitindo que a aplicação seja facilmente acessível na web.
 
-###Deploy: https://portfolio-vitoria-three.vercel.app/
+### Deploy: https://portfolio-vitoria-three.vercel.app/

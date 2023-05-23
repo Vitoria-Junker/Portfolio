@@ -25,7 +25,7 @@ export default function Contacts({href, children}) {
         </li>
         <li>
           <Links
-            href='mailto:chillout1manager@gmail.com' 
+            href='vickjunker22@gmail.com' 
             alt='vickjunker22@gmail.com'
             target='_blank'>
               <MdEmail className="w-8 h-8 text-pink-2 hover:scale-110 hover:text-pink"/></Links>

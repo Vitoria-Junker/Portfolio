@@ -26,10 +26,10 @@ export default function Header() {
             <Links href="/">Home</Links>
           </li>
           <li>
-            <Links href="/sobre">About</Links>
+            <Links href="/about">Sobre</Links>
           </li>
           <li>
-            <Links href="/projetos">Projects</Links>
+            <Links href="/projects">Projetos</Links>
           </li>
           <button
             onClick={handleAuthAction}

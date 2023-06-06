@@ -1,6 +1,6 @@
-
+import axios from "axios";
 import { useState } from "react";
-import { uploadImage } from "@/modules/storageNewProject";
+//import { uploadImage } from "@/modules/storageNewProject";
 import { validateForm } from "@/modules/validationNewProject";
 import { createNewProject } from "@/controllers/controller";
 
@@ -14,19 +14,20 @@ const initialFormValues = {
 export default function NewProject() {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [errors, setErrors] = useState({});
-  const [imgURL, setImgURL] = useState("");
+  //const [imgURL, setImgURL] = useState("");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleUpload = async () => {
-    const imageURL = await uploadImage(selectedImage);
-    setImgURL(imageURL);
-    return imageURL;
-  };
+  // const handleUpload = async () => {
+  //   const imageURL = await uploadImage(selectedImage);
+  //   setImgURL(imageURL);
+  //   return imageURL;
+  // };
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    setSelectedImage(file);
-  };
+   const handleImageChange = (event) => {
+     const file = event.target.files[0];
+     setSelectedImage(file);
+   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,12 +39,21 @@ export default function NewProject() {
     }
 
     try {
-      const imageURL = await handleUpload();
-      await createNewProject(formValues, imageURL);
+      const formData = new FormData();
+      formData.append('img', selectedImage);
+      //formData.append('img', selectedImage);
+
+      const { data } = await axios.post('http://localhost:3004/projects/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      const imgURL = data.url;
+      //const imageURL = await handleUpload();
+      await createNewProject(formValues, imgURL);
 
       setFormValues(initialFormValues);
       setSelectedImage(null);
-      setImgURL("");
 
       setErrors({});
     } catch (error) {

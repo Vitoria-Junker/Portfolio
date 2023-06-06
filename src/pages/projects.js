@@ -32,8 +32,7 @@ export default function ProjectsPage() {
         className="h-screen flex flex-col p-12 pb-20 text-pink overflow-y-auto"
         style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)" }}
       >
-        <h1 className="text-lg md:text-3xl font-sans pb-12">What I Did</h1>
-        <ul className="grid grid-cols-1 text-center gap-12 md:grid-cols-2 lg:grid-cols-3 mb-8">
+        <ul className="flex gap-10 justify-center flex-wrap mb-8">
           {projects.map((project) => (
             <li
               key={project.id}
@@ -53,11 +52,11 @@ export default function ProjectsPage() {
             </li>
           ))}
         </ul>
-        {showNewProjectLink && (
+          {showNewProjectLink && ( 
           <Link href="/newProject" className="pb-16">
             New Project
           </Link>
-        )}
+        )} 
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 export default function HomePage() {
   const {data: session} = useSession() 
@@ -13,12 +14,12 @@ export default function HomePage() {
           >           
             Web Developer
           </h1>
-          <h2
-            className="text-4xl text-pink "
+          <Link href='/projects'
+            className="text-4xl text-pink hover:text-pink-3 transition "
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(155, 199, 206, 1)" }}
           >
            {'<Portfolio />'} 
-          </h2>
+          </Link>
           
         </div>
         <div>

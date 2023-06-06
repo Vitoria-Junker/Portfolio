@@ -1,8 +1,11 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import Links from "./link";
 import { useSession, signOut } from "next-auth/react";
 
+
+
 export default function Header() {
+  const router = useRouter()
   const { data: session } = useSession();
 
   const handleAuthAction = () => {
@@ -23,13 +26,16 @@ export default function Header() {
         </div>
         <ul className="flex gap-8 ">
           <li>
-            <Links href="/">Home</Links>
+            <Links href="/" active={router.pathname === "/"}>Home</Links>
           </li>
           <li>
-            <Links href="/about">Sobre</Links>
+            <Links href="/about" active={router.pathname === "/about"}>Sobre</Links>
           </li>
           <li>
-            <Links href="/projects">Projetos</Links>
+            <Links href="/projects" active={router.pathname === "/projects"}>Projetos</Links>
+          </li>
+          <li>
+            <Links href="/contact" active={router.pathname === "/contact"}>Contato</Links>
           </li>
           <button
             onClick={handleAuthAction}

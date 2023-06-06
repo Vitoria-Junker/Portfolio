@@ -27,11 +27,15 @@ module.exports = {
         'purple-2': '#9b6cce',
         'pink':'#E8D2FF',
         'pink-2': '#DDBBFF',
-        'pink-3':'#BBA2FF'
+        'pink-3':'#BBA2FF',
+        'green-c':'#a0d6c1',
+        'green-d':'#c0d6cd',
       },
+
       shadow: {
         'text-shadow': '2px 2px 2px rgba(0, 0, 0, 0.5)'
       }
+      
     },fontFamily: {
       sans: ['Work Sans', 'sans-serif'],
       mono: ['VT323'],

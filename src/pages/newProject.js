@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState } from "react";
-//import { uploadImage } from "@/modules/storageNewProject";
 import { validateForm } from "@/modules/validationNewProject";
 import { createNewProject } from "@/controllers/controller";
 
@@ -14,20 +13,13 @@ const initialFormValues = {
 export default function NewProject() {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [errors, setErrors] = useState({});
-  //const [imgURL, setImgURL] = useState("");
   const [selectedImage, setSelectedImage] = useState(null);
-
-  // const handleUpload = async () => {
-  //   const imageURL = await uploadImage(selectedImage);
-  //   setImgURL(imageURL);
-  //   return imageURL;
-  // };
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
    const handleImageChange = (event) => {
      const file = event.target.files[0];
      setSelectedImage(file);
    };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,15 +33,13 @@ export default function NewProject() {
     try {
       const formData = new FormData();
       formData.append('img', selectedImage);
-      //formData.append('img', selectedImage);
 
-      const { data } = await axios.post('http://localhost:3004/projects/upload', formData, {
+      const { data } = await axios.post(apiUrl+'upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       });
       const imgURL = data.url;
-      //const imageURL = await handleUpload();
       await createNewProject(formValues, imgURL);
 
       setFormValues(initialFormValues);

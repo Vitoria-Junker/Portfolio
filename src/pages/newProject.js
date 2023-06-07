@@ -34,7 +34,7 @@ export default function NewProject() {
       const formData = new FormData();
       formData.append('img', selectedImage);
 
-      const { data } = await axios.post(apiUrl+'upload', formData, {
+      const { data } = await axios.post(apiUrl+'/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

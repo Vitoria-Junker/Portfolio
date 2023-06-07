@@ -52,11 +52,11 @@ export default function ProjectsPage() {
             </li>
           ))}
         </ul>
-          {showNewProjectLink && ( 
+          {/* {showNewProjectLink && (  */}
           <Link href="/newProject" className="pb-16">
             New Project
           </Link>
-        )} 
+        {/*  )}  */}
       </div>
     </>
   );

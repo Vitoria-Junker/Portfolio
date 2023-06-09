@@ -6,10 +6,8 @@ export default function LoginPage() {
   return (
     <>
       <div className="flex items-center justify-center h-full">
-        <div className="flex items-center flex-col w-full max-w-md px-4 py-8 rounded-lg shadow bg-gray-800/50 sm:px-6 md:px-8 lg:px-10">
-          <div className="self-center mb-6 text-xl font-light sm:text-2xl text-white">
-            Login To Your Account
-          </div>
+        <div className="flex items-center  flex-col w-80 md:w-full max-w-md px-4 py-8  sm:px-6 md:px-8 lg:px-10">
+           
           <div className="flex flex-wrap gap-4 justify-center ">
             <button
               onClick={() => signIn("github")}
@@ -22,7 +20,7 @@ export default function LoginPage() {
             <button
               onClick={() => signIn("google")}
               type="button"
-              className="py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-800 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+              className="py-2 px-4 flex justify-center items-center  bg-pink2/60 hover:bg-pink2/40 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
             >
               <FaGoogle className="inline-block mr-2" />
               Sign in with Google

@@ -7,7 +7,14 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
+  theme: { screens: {
+    'sm': '640px',
+    'md': '768px',
+    'lg': '1024px',
+    'xl': '1280px',
+    '2xl': '1536px',
+    'custom': '850px', // Novo breakpoint personalizado
+  },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -18,7 +25,8 @@ module.exports = {
         'purple-bt':'#8156bf',
         'pink2': '#DDBBFF',
         'pink':'#E8D2FF',
-        'ciano':'#06143d'
+        'ciano':'#06143d',
+        'purp':'#6e6499',
       },
     
       textColor: {
@@ -40,7 +48,8 @@ module.exports = {
       sans: ['Work Sans', 'sans-serif'],
       mono: ['VT323'],
       sanss: ['Raleway'],
-      karla: ['Karla', 'sans-serif']
+      karla: ['Karla', 'sans-serif'],
+      fredoka:['Fredoka', 'sans-serif']
     }
   },
   plugins: [],

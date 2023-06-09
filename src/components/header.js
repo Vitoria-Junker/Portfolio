@@ -22,9 +22,9 @@ export default function Header() {
     <>
       <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-20">
         <div>
-        <p className="text-sm md:text-lg text-pink-2 font-karla">Bem vindo(a) {session?.user?.name}!</p>    
+        <p className="text-sm md:text-lg text-pink-2 font-fredoka">Bem vindo(a) {session?.user?.name}!</p>    
         </div>
-        <ul className="flex gap-8 ">
+        <ul className="flex gap-8">
           <li>
             <Links href="/" active={router.pathname === "/"}>Home</Links>
           </li>
@@ -39,7 +39,7 @@ export default function Header() {
           </li>
           <button
             onClick={handleAuthAction}
-            className="transition text-center bg-pink/20 md:bg-pink/80 font-karla text-purple text-xs md:text-sm py-0.5 px-4 md:px-2 hover:bg-pink2 rounded "
+            className="transition text-center bg-pink/80 font-karla text-purple text-xs md:text-sm py-0.5 px-4 md:px-2 hover:bg-pink2 rounded "
           >
             {session ? "Sign out" : "Login"}
           </button>

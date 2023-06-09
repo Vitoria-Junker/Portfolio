@@ -23,7 +23,7 @@ export default function HomePage() {
           
         </div>
         <div>
-          <img src="/image/focus.svg" alt="girl coding" className="w-80"></img>
+          <img src="/image/codee.svg" alt="girl coding" className="w-96"></img>
         </div>
       </div>
     </>

@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
+      <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between md:max-h-20">
         <div>
           <p className="text-lg md:text-xl text-pink-2 font-fredoka">
             Bem-vindo(a) {session?.user?.name}!
@@ -37,7 +37,7 @@ export default function Header() {
             className="block md:hidden lg:hidden focus:outline-none p-2"
           >
             {isMenuOpen ? (
-              <FiX className="h-6 w-6" onClick={handleMenuToggle} />
+              <FiX className="h-4 w-4" onClick={handleMenuToggle} />
             ) : (
               <FiMenu className="h-6 w-6" />
             )}
@@ -45,7 +45,7 @@ export default function Header() {
           <ul
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } lg:flex md:flex gap-8 mt-4 lg:mt-0`}
+            } lg:flex md:flex gap-8 small:gap-4 mt-4 lg:mt-0`}
           >
             <li>
               <Links href="/" active={router.pathname === "/"}>
@@ -75,7 +75,7 @@ export default function Header() {
             </li>
             <button
               onClick={handleAuthAction}
-              className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 md:px-2 hover:bg-pink2 rounded"
+              className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 hover:bg-pink2/70 rounded"
             >
               {session ? "Sign out" : "Login"}
             </button>

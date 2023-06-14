@@ -4,15 +4,15 @@
 
 export default function Sobre() {
   return (
-    <div className="grid lg:grid-rows-2 font-fredoka max-h-screen items-center overflow-visible">
+    <div className="grid font-fredoka max-h-screen items-center overflow-visible">
       <Head>
         <title>About me | Vitória Junker</title>
         <meta name="description" content="Sessão sobre mim" />
       </Head>
-      <div className="flex flex-wrap justify-center custom:pt-16 lg:pl-16 lg:pr-16 p-8 align-top pb-6">
+      <div className="flex flex-wrap justify-center lg:pl-16 lg:pr-16 p-4 pb-4">
         <div className="flex text-center md:text-start p-2 md:w-1/3 pt-8 md:pt-2">
           <p
-            className="max-w-60 text-pink-2 max-h-full text-2xl md:text-xl custom:text-xl lg:text-2xl"
+            className="max-w-60 text-pink-2 max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />
@@ -33,7 +33,7 @@ export default function Sobre() {
         </div>
         <div className="md:w-1/3 p-2 text-center md:text-right text-lg text-pink-2">
           <p
-            className="max-h-full text-2xl md:text-xl custom:text-xl lg:text-2xl"
+            className="max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />

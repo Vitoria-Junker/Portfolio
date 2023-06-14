@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between md:max-h-20">
+      <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
         <div>
           <p className="text-lg md:text-xl text-pink-2 font-fredoka">
             Bem-vindo(a) {session?.user?.name}!
@@ -39,13 +39,13 @@ export default function Header() {
             {isMenuOpen ? (
               <FiX className="h-4 w-4" onClick={handleMenuToggle} />
             ) : (
-              <FiMenu className="h-6 w-6" />
+              <FiMenu className="h-10 w-10" />
             )}
           </button>
           <ul
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } lg:flex md:flex gap-8 small:gap-4 mt-4 lg:mt-0`}
+            } lg:flex md:flex sm:gap-8 small:gap-4 mt-4 lg:mt-0`}
           >
             <li>
               <Links href="/" active={router.pathname === "/"}>

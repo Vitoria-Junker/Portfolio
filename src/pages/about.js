@@ -4,19 +4,19 @@
 
 export default function Sobre() {
   return (
-    <div className="grid lg:grid-rows-2 font-fredoka h-screen items-center">
+    <div className="grid lg:grid-rows-2 font-fredoka max-h-screen items-center overflow-visible">
       <Head>
         <title>About me | Vitória Junker</title>
         <meta name="description" content="Sessão sobre mim" />
       </Head>
-      <div className="flex flex-wrap justify-center p-8 align-top pb-6">
+      <div className="flex flex-wrap justify-center custom:pt-16 lg:pl-16 lg:pr-16 p-8 align-top pb-6">
         <div className="flex text-center md:text-start p-2 md:w-1/3 pt-8 md:pt-2">
           <p
-            className="max-w-60 text-pink-2 max-h-full text-2xl md:text-xl custom:text-2xl"
+            className="max-w-60 text-pink-2 max-h-full text-2xl md:text-xl custom:text-xl lg:text-2xl"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />
-            <span className="text-4xl">Meu nome é Vitória Junker</span>
+            <span className="text-4xl md:text-2xl custom:text-4xl">Meu nome é Vitória Junker</span>
             <br />
             Tenho 22 anos e sou uma desenvolvedora em transição de carreira. Com
             um grande entusiasmo pelo mundo da tecnologia, meu foco principal é
@@ -33,7 +33,7 @@ export default function Sobre() {
         </div>
         <div className="md:w-1/3 p-2 text-center md:text-right text-lg text-pink-2">
           <p
-            className="max-h-full text-2xl md:text-xl custom:text-2xl"
+            className="max-h-full text-2xl md:text-xl custom:text-xl lg:text-2xl"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />

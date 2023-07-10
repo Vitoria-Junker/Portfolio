@@ -77,7 +77,7 @@ export default function Header() {
               onClick={handleAuthAction}
               className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 hover:bg-pink2/70 rounded"
             >
-              {session ? "Sign out" : "Login"}
+              {session ? "Sair" : "Entrar"}
             </button>
           </ul>
         </div>

@@ -2,9 +2,9 @@
  import Tecnologies from "@/components/tecnologies";
  import Link from "next/link";
 
-export default function Sobre() {
+export default function About() {
   return (
-    <div className="grid font-fredoka max-h-screen items-center overflow-visible">
+    <div className="grid font-fredoka items-center overflow-visible">
       <Head>
         <title>About me | Vitória Junker</title>
         <meta name="description" content="Sessão sobre mim" />
@@ -16,16 +16,16 @@ export default function Sobre() {
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />
-            <span className="text-4xl md:text-2xl custom:text-4xl">Meu nome é Vitória Junker</span>
+            <span className="text-3xl md:text-2xl custom:text-3xl">Meu nome é Vitória Junker,</span>
             <br />
-            Tenho 22 anos e sou uma desenvolvedora em transição de carreira. Com
+            tenho 22 anos e sou uma desenvolvedora em transição de carreira. Com
             um grande entusiasmo pelo mundo da tecnologia, meu foco principal é
             o desenvolvimento web.
           </p>
         </div>
         <div className="flex flex-col items-center md:w-1/3">
           <img
-            src="/image/coffee.svg"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2FIMG_20230627_224350_114.jpg?alt=media&token=8cd56d69-fc3c-45ac-ab51-edd063e9787b"
             alt="vitoria-avatar"
             className="h-72 p-4"
           />
@@ -43,8 +43,7 @@ export default function Sobre() {
             <Link href="/projects" className="text-green-c hover:text-pink">
               Aqui
             </Link>{" "}
-            você encontrará alguns dos projetos que desenvolvi ao longo do meu
-            aprendizado. Espero que goste!
+            você encontrará alguns dos projetos que desenvolvi. Espero que goste!
           </p>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function ProjectsPage() {
         <meta name="description" content="Sessão sobre mim" />
       </Head>
       <div
-        className="h-screen flex flex-col p-12 pb-20 text-pink overflow-y-auto"
+        className="h-screen flex flex-col p-12 pb-20 text-pink"
         style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)" }}
       >
         <ul className="flex gap-10 justify-center flex-wrap mb-8">
@@ -52,11 +52,11 @@ export default function ProjectsPage() {
             </li>
           ))}
         </ul>
-          {/* {showNewProjectLink && (  */}
+           {showNewProjectLink && (  
           <Link href="/newProject" className="pb-16">
             New Project
           </Link>
-        {/*  )}  */}
+          )}  
       </div>
     </>
   );

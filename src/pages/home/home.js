@@ -23,7 +23,7 @@ export default function HomePage() {
           
         </div>
         <div>
-          <img src="/image/codee.svg" alt="girl coding" className="w-96"></img>
+          <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2Fundraw_dev_focus_re_6iwt.svg?alt=media&token=db49c7ec-94bf-422e-85d5-d0352ad56334" alt="girl coding" className="w-96"></img>
         </div>
       </div>
     </>

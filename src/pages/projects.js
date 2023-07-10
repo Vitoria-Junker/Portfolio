@@ -3,6 +3,7 @@ import { useUserSession, isMyEmail } from "@/session/session";
 import { getProjects } from "@/api-routes/routes";
 import Link from "next/link";
 import Head from "next/head";
+import Footer from "@/components/footer";
 
 const apiURL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -56,8 +57,12 @@ export default function ProjectsPage() {
           <Link href="/newProject" className="pb-16">
             New Project
           </Link>
-          )}  
+          )} 
+          <div className="fixed left-0 bottom-0 w-full">
+            <Footer  />
+          </div>
       </div>
+     
     </>
   );
 }

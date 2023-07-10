@@ -12,7 +12,7 @@ export default function LoginPage() {
             <button
               onClick={() => signIn("github")}
               type="button"
-              className="py-2 px-4 flex justify-center items-center  bg-gray-600 hover:bg-gray-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+              className="p-4 flex w-28 h-28 justify-center items-center  bg-gray-600/50 hover:bg-gray-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
             >
               <FaGithub className="inline-block mr-2" />
               Sign in with GitHub
@@ -20,7 +20,7 @@ export default function LoginPage() {
             <button
               onClick={() => signIn("google")}
               type="button"
-              className="py-2 px-4 flex justify-center items-center  bg-pink2/60 hover:bg-pink2/40 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+              className="p-4 flex w-28 h-28 justify-center items-center  bg-pink2/60 hover:bg-pink2/40 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
             >
               <FaGoogle className="inline-block mr-2" />
               Sign in with Google

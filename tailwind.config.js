@@ -29,6 +29,7 @@ module.exports = {
         'pink':'#E8D2FF',
         'ciano':'#06143d',
         'purp':'#6e6499',
+        
       },
     
       textColor: {

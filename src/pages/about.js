@@ -1,6 +1,7 @@
  import Head from "next/head";
  import Tecnologies from "@/components/tecnologies";
  import Link from "next/link";
+ import Footer from "@/components/footer";
 
 export default function About() {
   return (
@@ -27,9 +28,9 @@ export default function About() {
           <img
             src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2FIMG_20230627_224350_114.jpg?alt=media&token=8cd56d69-fc3c-45ac-ab51-edd063e9787b"
             alt="vitoria-avatar"
-            className="h-72 p-4"
+            className="h-72 border-2 border-teal-200/50 rounded-full  p-4"
           />
-          <h2 className="text-xl text-green-d">Web Developer</h2>
+          <h2 className="mt-4 text-xl text-green-d">Web Developer</h2>
         </div>
         <div className="md:w-1/3 p-2 text-center md:text-right text-lg text-pink-2">
           <p
@@ -47,9 +48,10 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="">
+      <div className="pt-8 pb-12">
         <Tecnologies />
       </div>
+      <Footer/>
     </div>
   );
 }

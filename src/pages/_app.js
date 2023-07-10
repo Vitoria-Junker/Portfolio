@@ -1,9 +1,6 @@
 import "@/styles/globals.css";
 import Header from "@/components/header";
-import Head from "next/head";
 import { SessionProvider } from "next-auth/react"
-import Footer from "@/components/footer";
-
 
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
@@ -21,7 +18,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
          <Header/>
         <Component {...pageProps} /> 
       </main>
-      <Footer/>
+      
        </div>
     </>
     </SessionProvider>

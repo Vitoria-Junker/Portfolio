@@ -25,11 +25,11 @@ export default function About() {
             Enthusiastic about the world of technology.
           </p>
         </div>
-        <div className="flex flex-col items-center md:w-1/3 md:pt-32">
+        <div className="flex flex-col items-center md:w-1/3 pt-12 md:pt-32">
         <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2Fundraw_dev_focus_re_6iwt.svg?alt=media&token=db49c7ec-94bf-422e-85d5-d0352ad56334" alt="girl coding" className="w-96"></img>
         </div>
       </div>
-      <div className="p-2 pr-28  flex justify-end  text-lg text-pink-2 ">
+      <div className="p-4 md:pr-28  flex justify-end  text-lg text-pink-2 ">
           <p
             className="max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl md:w-1/3"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}

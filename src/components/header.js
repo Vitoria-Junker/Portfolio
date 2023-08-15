@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
+      <header className="flex  gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
         <div>
           <p className="text-lg md:text-xl text-pink-2 font-fredoka">
             Welcome {session?.user?.name}.

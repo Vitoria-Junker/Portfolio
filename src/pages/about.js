@@ -1,7 +1,8 @@
  import Head from "next/head";
  import Tecnologies from "@/components/tecnologies";
  import Link from "next/link";
- import Footer from "@/components/footer";
+ import Contacts from "@/components/contacts";
+ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function About() {
   return (
@@ -11,47 +12,46 @@ export default function About() {
         <meta name="description" content="Sessão sobre mim" />
       </Head>
       <div className="flex flex-wrap justify-center lg:pl-16 lg:pr-16 p-4 pb-4">
-        <div className="flex text-center md:text-start p-2 md:w-1/3 pt-8 md:pt-2">
+        <div className="flex text-center md:text-start p-2 md:w-1/2 ">
           <p
             className="max-w-60 text-pink-2 max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />
-            <span className="text-3xl md:text-2xl custom:text-3xl">Meu nome é Vitória Junker,</span>
+            <span className="text-3xl text-6xl text-green-d large:text-7xl">Hello, i am Vitoria Junker,</span>
             <br />
-            tenho 22 anos e sou uma desenvolvedora em transição de carreira. Com
-            um grande entusiasmo pelo mundo da tecnologia, meu foco principal é
-            o desenvolvimento web.
+            <span className="text-3xl text-6xl text-green-d large:text-7xl">Web Developer</span>
+            <br />
+            Enthusiastic about the world of technology.
           </p>
         </div>
-        <div className="flex flex-col items-center md:w-1/3">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2FIMG_20230627_224350_114.jpg?alt=media&token=8cd56d69-fc3c-45ac-ab51-edd063e9787b"
-            alt="vitoria-avatar"
-            className="h-72 border-2 border-teal-200/50 rounded-full  p-4"
-          />
-          <h2 className="mt-4 text-xl text-green-d">Web Developer</h2>
+        <div className="flex flex-col items-center md:w-1/3 md:pt-32">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-vitoria.appspot.com/o/images%2Fundraw_dev_focus_re_6iwt.svg?alt=media&token=db49c7ec-94bf-422e-85d5-d0352ad56334" alt="girl coding" className="w-96"></img>
         </div>
-        <div className="md:w-1/3 p-2 text-center md:text-right text-lg text-pink-2">
+      </div>
+      <div className="p-2 pr-28  flex justify-end  text-lg text-pink-2 ">
           <p
-            className="max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl"
+            className="max-h-full text-2xl md:text-xl custom:text-xl large:text-2xl md:w-1/3"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
-            <br />
-            Estou constantemente buscando aprimorar minhas habilidades para
-            criar experiências interativas e responsivas na web.
-            <br />
             <Link href="/projects" className="text-green-c hover:text-pink">
-              Aqui
+              Here
             </Link>{" "}
-            você encontrará alguns dos projetos que desenvolvi. Espero que goste!
+            you will find some of the projects I have developed.
           </p>
         </div>
-      </div>
-      <div className="pt-8 pb-12">
+      <div className="pt-8 pb-12 text-center w-100 flex flex-col justify-center items-center">
+        <h1 className="p-6 text-3xl text-green-c">Techs</h1>
         <Tecnologies />
-      </div>
-      <Footer/>
+        <div>
+          <Link href="/projects" className="flex flex-col justify-center items-center text-pink gap-2 p-6 transition duration-300 ease-in-out transform hover:text-pink-3 hover:scale-90">
+              <span>Projects</span>
+             <BsFillArrowRightCircleFill className="h-8 w-8"/>
+          </Link>
+ 
+        </div>
+        <Contacts/>
+    </div>
     </div>
   );
 }

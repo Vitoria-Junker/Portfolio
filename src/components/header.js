@@ -28,7 +28,7 @@ export default function Header() {
       <header className="flex flex-col gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
         <div>
           <p className="text-lg md:text-xl text-pink-2 font-fredoka">
-            Bem-vindo(a) {session?.user?.name}!
+            Welcome {session?.user?.name}.
           </p>
         </div>
         <div className="flex items-center">
@@ -53,31 +53,20 @@ export default function Header() {
               </Links>
             </li>
             <li>
-              <Links href="/about" active={router.pathname === "/about"}>
-                Sobre
-              </Links>
-            </li>
-            <li>
               <Links
                 href="/projects"
                 active={router.pathname === "/projects"}
               >
-                Projetos
+                Projects
               </Links>
             </li>
             <li>
-              <Links
-                href="/contact"
-                active={router.pathname === "/contact"}
-              >
-                Contato
-              </Links>
             </li>
             <button
               onClick={handleAuthAction}
-              className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 hover:bg-pink2/70 rounded"
+              className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 transition duration-300 ease-in-out transform hover:bg-pink2/70 rounded"
             >
-              {session ? "Sair" : "Entrar"}
+              {session ? "Log out" : "Login"}
             </button>
           </ul>
         </div>

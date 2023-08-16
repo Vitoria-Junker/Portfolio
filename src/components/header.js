@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiLogOut} from "react-icons/fi";
+import { FaUserAstronaut } from "react-icons/fa";
+import { CiMenuKebab } from "react-icons/ci";
 import Links from "./link";
 import { useSession, signOut } from "next-auth/react";
 
@@ -28,28 +30,19 @@ export default function Header() {
       <header className="flex  gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
         <div>
           <p className="text-lg md:text-xl text-pink-2 font-fredoka">
-            Welcome {session?.user?.name}.
+            Welcome, {session?.user?.name}
           </p>
         </div>
         <div className="flex items-center">
-          <button
-            onClick={handleMenuToggle}
-            className="block md:hidden lg:hidden focus:outline-none p-2"
-          >
-            {isMenuOpen ? (
-              <FiX className="h-4 w-4" onClick={handleMenuToggle} />
-            ) : (
-              <FiMenu className="h-10 w-10" />
-            )}
-          </button>
+          
           <ul
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } lg:flex md:flex sm:gap-8 small:gap-4 mt-4 lg:mt-0`}
+            }  sm:gap-8 small:gap-4 mt-4 lg:mt-0`}
           >
             <li>
               <Links href="/" active={router.pathname === "/"}>
-                Home
+                home
               </Links>
             </li>
             <li>
@@ -57,18 +50,28 @@ export default function Header() {
                 href="/projects"
                 active={router.pathname === "/projects"}
               >
-                Projects
+                projects
               </Links>
             </li>
             <li>
             </li>
             <button
               onClick={handleAuthAction}
-              className="transition text-center bg-pink/40 font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-4 transition duration-300 ease-in-out transform hover:bg-pink2/70 rounded"
+              className="transition text-center font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-3 transition duration-300 ease-in-out transform hover:text-pink-3 rounded"
             >
-              {session ? "Log out" : "Login"}
+              {session ? <FiLogOut className="h-6 w-6" alt="Login"/>  : <FaUserAstronaut className="h-6 w-6" alt="Login"/>  }
             </button>
           </ul>
+          <button
+            onClick={handleMenuToggle}
+            className="block  focus:outline-none p-2 transition duration-300 ease-in-out hover:text-pink hover:scale-90 "
+          >
+            {isMenuOpen ? (
+              <CiMenuKebab className="h-6 w-6" onClick={handleMenuToggle} />
+            ) : (
+              <FiMenu className="h-10 w-10" />
+            )}
+          </button>
         </div>
       </header>
     </>

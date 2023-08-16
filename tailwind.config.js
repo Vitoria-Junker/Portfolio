@@ -19,6 +19,7 @@ module.exports = {
   },
     extend: {
       backgroundImage: {
+        'gradient-bg':'linear-gradient(to right, #0f0c29, #302b63, #24243e)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -31,11 +32,14 @@ module.exports = {
         'purp':'#6e6499',
         
       },
-    
+      colors: {
+        'pink-3': '#BBA2FF',
+      },
       textColor: {
         'primary': '#888F70',
         'purple': '#8156bf',
         'purple-2': '#9b6cce',
+        'p':'#967ac1',
         'pink':'#E8D2FF',
         'pink-2': '#DDBBFF',
         'pink-3':'#BBA2FF',
@@ -51,8 +55,12 @@ module.exports = {
       sans: ['Work Sans', 'sans-serif'],
       mono: ['VT323'],
       sanss: ['Raleway'],
+      'volkhov': ['Volkhov', 'serif'],
+      'old': ['Old Standard TT', 'serif'],
       karla: ['Karla', 'sans-serif'],
-      fredoka:['Fredoka', 'sans-serif']
+      fredoka:['Fredoka', 'sans-serif'],
+      'playfair': ['Playfair Display', 'serif'],
+      'ubuntu': ['Ubuntu Mono', 'monospace']
     }
   },
   plugins: [],

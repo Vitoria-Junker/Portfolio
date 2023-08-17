@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { FiMenu, FiLogOut} from "react-icons/fi";
+import { FiLogOut} from "react-icons/fi";
 import { FaUserAstronaut } from "react-icons/fa";
 import { CiMenuKebab } from "react-icons/ci";
 import Links from "./link";
@@ -64,12 +64,12 @@ export default function Header() {
           </ul>
           <button
             onClick={handleMenuToggle}
-            className="block  focus:outline-none p-2 transition duration-300 ease-in-out hover:text-pink hover:scale-90 "
+            className="block  focus:outline-none p-2 transition duration-300 ease-in-out text-pink hover:text-pink-3 hover:scale-90 "
           >
             {isMenuOpen ? (
-              <CiMenuKebab className="h-6 w-6" onClick={handleMenuToggle} />
+              <CiMenuKebab className="h-8 w-8" onClick={handleMenuToggle} />
             ) : (
-              <FiMenu className="h-10 w-10" />
+              <CiMenuKebab className="h-10 w-10" />
             )}
           </button>
         </div>

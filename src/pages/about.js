@@ -31,7 +31,7 @@ export default function About() {
       </div>
       <div className="p-4 md:pr-28  flex justify-end  text-lg text-pink-2 ">
           <p
-            className="max-h-full text-2xl md:text-xl text-green-d font-fredoka custom:text-xl large:text-2xl md:w-1/3"
+            className="max-h-full text-center text-2xl md:text-xl text-green-d font-fredoka custom:text-xl large:text-2xl md:w-1/3"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <Link href="/projects" className="text-green-c  hover:text-pink">
@@ -52,7 +52,7 @@ export default function About() {
         </div>
        
       </div>
-      <div className="w-100 bg-gradient-ct">
+      <div className="w-100 bg-gradient-ct pt-12">
           <Contacts/>
       </div>
     </div>

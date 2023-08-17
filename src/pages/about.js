@@ -2,7 +2,7 @@
  import Tecnologies from "@/components/tecnologies";
  import Link from "next/link";
  import Contacts from "@/components/contacts";
- import { BsArrowRightShort } from "react-icons/bs";
+ import { BsCodeSlash } from "react-icons/bs";
 
 export default function About() {
   return (
@@ -43,15 +43,18 @@ export default function About() {
       <div className="pt-8 pb-12 text-center w-100 font-old flex flex-col justify-center items-center">
         <h1 className="p-6 text-4xl text-pink-3">SKILLS & TOOLS</h1>
         <Tecnologies />
-        <div>
-          <Link href="/projects" className="flex text-2xl flex-col justify-center items-center text-green-d gap-2 p-6 transition duration-300 ease-in-out transform hover:text-pink hover:scale-90">
+        <div className="py-16">
+          <Link href="/projects" className="flex text-2xl flex-col justify-center font-karla items-center text-green-d gap-2 p-6 transition duration-300 ease-in-out transform hover:text-pink hover:scale-90">
               <span>p r o j e c t s</span>
-             <BsArrowRightShort className="h-8 w-8"/>
+             <BsCodeSlash className="h-8 w-8"/>
           </Link>
  
         </div>
-        <Contacts/>
-    </div>
+       
+      </div>
+      <div className="w-100 bg-gradient-ct">
+          <Contacts/>
+      </div>
     </div>
   );
 }

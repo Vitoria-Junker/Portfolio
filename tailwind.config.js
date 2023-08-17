@@ -19,6 +19,7 @@ module.exports = {
   },
     extend: {
       backgroundImage: {
+        'gradient-ct':'linear-gradient(to right, #0f0c40, #302b43, #24313e)',
         'gradient-bg':'linear-gradient(to right, #0f0c29, #302b63, #24243e)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

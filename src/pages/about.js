@@ -18,7 +18,7 @@ export default function About() {
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
             <br />
-            <span className="text-3xl text-6xl text-green-d font-playfair font-bold large:text-7xl">Hello, i am Vitoria Junker,</span>
+            <span className="text-3xl text-6xl text-green-d font-playfair font-bold large:text-7xl">Hello, i am <br/> Vitoria Junker,</span>
             <br />
             <span className="text-3xl text-6xl text-green-d font-playfair font-bold large:text-7xl">Web Developer</span>
             <br />
@@ -34,27 +34,16 @@ export default function About() {
             className="max-h-full text-center text-2xl md:text-xl text-green-d font-fredoka custom:text-xl large:text-2xl md:w-1/3"
             style={{ textShadow: "0.5px 0.5px 0.5px rgba(0,0,0,0.6)" }}
           >
-            <Link href="/projects" className="text-green-c  hover:text-pink">
-              Here
-            </Link>{" "}
+            Here
             you will find some of the projects I have developed.
           </p>
         </div>
-      <div className="pt-8 pb-12 text-center w-100 font-old flex flex-col justify-center items-center">
+      <div className="pt-8 text-center w-100 font-semibold flex flex-col justify-center items-center">
         <h1 className="p-6 text-4xl text-pink-3">SKILLS & TOOLS</h1>
         <Tecnologies />
-        <div className="py-16">
-          <Link href="/projects" className="flex text-2xl flex-col justify-center font-karla items-center text-green-d gap-2 p-6 transition duration-300 ease-in-out transform hover:text-pink hover:scale-90">
-              <span>p r o j e c t s</span>
-             <BsCodeSlash className="h-8 w-8"/>
-          </Link>
- 
-        </div>
        
       </div>
-      <div className="w-100 bg-gradient-ct pt-12">
-          <Contacts/>
-      </div>
+     
     </div>
   );
 }

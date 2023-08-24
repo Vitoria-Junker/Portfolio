@@ -8,6 +8,7 @@ const initialFormValues = {
   link: "",
   description: "",
   img: "",
+  tecnologies:"",
 };
 
 export default function NewProject() {
@@ -77,6 +78,17 @@ export default function NewProject() {
               onChange={handleChange}
               className="border-2 rounded-lg p-2 mb-1"
               data-testid="name-input"
+            />
+            {errors.tecnologies && <p className="text-red-500">{errors.tecnologies}</p>}
+            <input
+              type="text"
+              id="tecnologies"
+              name="tecnologies"
+              placeholder="Tecnologies"
+              value={formValues.tecnologies}
+              onChange={handleChange}
+              className="border-2 rounded-lg p-2 mb-1"
+              data-testid="tecnologies-input"
             />
             {errors.link && (
               <p className="text-red-500 text-sm">{errors.link}</p>

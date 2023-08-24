@@ -29,7 +29,7 @@ module.exports = {
         'purple-bt':'#8156bf',
         'pink2': '#DDBBFF',
         'pink':'#E8D2FF',
-        'ciano':'#06143d',
+        'ciano':'#06102b',
         'purp':'#6e6499',
         
       },

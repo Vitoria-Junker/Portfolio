@@ -27,13 +27,19 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex  gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
+      <header className="flex flex-wrap gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
         <div>
-          <p className="text-lg md:text-xl text-pink-2 font-fredoka">
-            Welcome, {session?.user?.name}
+        <button
+              onClick={handleAuthAction}
+              className="transition text-center font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-3 transition duration-300 ease-in-out transform hover:text-pink-3 rounded"
+            >
+              {session ? <FiLogOut className="h-6 w-6" alt="Login"/>  : <FaUserAstronaut className="h-6 w-6" alt="Login"/>  }
+            </button>
+          <p className="text-base md:text-xl text-pink-2 font-fredoka">
+            Welcome {session?.user?.name}
           </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center">
           
           <ul
             className={`${
@@ -46,21 +52,7 @@ export default function Header() {
               </Links>
             </li>
             <li>
-              <Links
-                href="/projects"
-                active={router.pathname === "/projects"}
-              >
-                projects
-              </Links>
             </li>
-            <li>
-            </li>
-            <button
-              onClick={handleAuthAction}
-              className="transition text-center font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-3 transition duration-300 ease-in-out transform hover:text-pink-3 rounded"
-            >
-              {session ? <FiLogOut className="h-6 w-6" alt="Login"/>  : <FaUserAstronaut className="h-6 w-6" alt="Login"/>  }
-            </button>
           </ul>
           <button
             onClick={handleMenuToggle}

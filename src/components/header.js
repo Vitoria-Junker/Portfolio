@@ -3,10 +3,11 @@ import { useRouter } from "next/router";
 import { FiLogOut} from "react-icons/fi";
 import { FaUserAstronaut } from "react-icons/fa";
 import { CiMenuKebab } from "react-icons/ci";
-import Links from "./link";
+import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
+import { useRef } from "react";
 
-export default function Header() {
+export default function Header(props) {
   const router = useRouter();
   const { data: session } = useSession();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,36 +26,35 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScrollTo = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false); // Fecha o menu após clicar em um link
+  };
+
   return (
     <>
-      <header className="flex flex-wrap gap-4 items-center lg:flex-row md:flex-row p-8 justify-between max-h-32 md:max-h-20">
-        <div>
-        <button
-              onClick={handleAuthAction}
-              className="transition text-center font-fredoka font-medium text-pink text-xs md:text-sm py-0.5 px-3 transition duration-300 ease-in-out transform hover:text-pink-3 rounded"
-            >
-              {session ? <FiLogOut className="h-6 w-6" alt="Login"/>  : <FaUserAstronaut className="h-6 w-6" alt="Login"/>  }
-            </button>
-          <p className="text-base md:text-xl text-pink-2 font-fredoka">
-            Welcome {session?.user?.name}
-          </p>
-        </div>
-        <div className="flex items-center justify-center">
-          
+      <header className="flex flex-wrap gap-4  lg:flex-row md:flex-row p-8 justify-end max-h-32 md:max-h-20 w-full">
+        <div className="flex w-full justify-end">
           <ul
-            className={`${
-              isMenuOpen ? "flex" : "hidden"
-            }  sm:gap-8 small:gap-4 mt-4 lg:mt-0`}
+            className=" flex sm:gap-8 small:gap-4 mt-4 lg:mt-0 text-sm
+             md:text-base font-medium font-karla transition hover:text-pink-3 transition duration-300 ease-in-out transform"
           >
             <li>
-              <Links href="/" active={router.pathname === "/"}>
+              <Link href="/" >
                 home
-              </Links>
+              </Link>
             </li>
             <li>
+              <button onClick={() => handleScrollTo(props.aboutRef)}>Sobre mim</button>
+            </li>
+            <li>
+              <button onClick={() => handleScrollTo(props.projectsRef)}>Projetos</button>
+            </li>
+            <li>
+              <button onClick={() => handleScrollTo(props.contactRef)}>Contato</button>
             </li>
           </ul>
-          <button
+          {/* <button
             onClick={handleMenuToggle}
             className="block  focus:outline-none p-2 transition duration-300 ease-in-out text-pink hover:text-pink-3 hover:scale-90 "
           >
@@ -63,7 +63,7 @@ export default function Header() {
             ) : (
               <CiMenuKebab className="h-10 w-10" />
             )}
-          </button>
+          </button> */}
         </div>
       </header>
     </>

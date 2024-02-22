@@ -7,7 +7,7 @@ export default function Contacts() {
     return (
       <>
       <div className="w-full bg-gradient-ct mt-20 pb-4 flex flex-col font-fredoka font-bold items-center">
-        <h2 className="text-pink-2 text-2xl">contact me</h2>
+        <h2 className="text-pink-2 text-2xl">Vamos conversar!</h2>
         <ul className="flex flex-wrap justify-center gap-4 items-center p-4 mb-20">
           <li>
             <Link 

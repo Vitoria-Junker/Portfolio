@@ -33,25 +33,25 @@ export default function Header(props) {
 
   return (
     <>
-      <header className="flex flex-wrap gap-4  lg:flex-row md:flex-row p-8 justify-end max-h-32 md:max-h-20 w-full">
-        <div className="flex w-full justify-end">
+      <header className="flex flex-wrap gap-4  lg:flex-row md:flex-row p-8 max-h-32 md:max-h-20 w-full">
+        <div className="flex w-full justify-center md:justify-end">
           <ul
             className=" flex sm:gap-8 small:gap-4 mt-4 lg:mt-0 text-sm
-             md:text-base font-medium font-karla transition hover:text-pink-3 transition duration-300 ease-in-out transform"
+            font-medium text-pink font-karla transition  transition duration-300 ease-in-out transform"
           >
-            <li>
+            <li className="hover:text-pink-3">
               <Link href="/" >
                 home
               </Link>
             </li>
-            <li>
-              <button onClick={() => handleScrollTo(props.aboutRef)}>Sobre mim</button>
+            <li className="hover:text-pink-3">
+              <button onClick={() => handleScrollTo(props.aboutRef)}>sobre mim</button>
             </li>
-            <li>
-              <button onClick={() => handleScrollTo(props.projectsRef)}>Projetos</button>
+            <li className="hover:text-pink-3">
+              <button onClick={() => handleScrollTo(props.projectsRef)}>projetos</button>
             </li>
-            <li>
-              <button onClick={() => handleScrollTo(props.contactRef)}>Contato</button>
+            <li className="hover:text-pink-3">
+              <button onClick={() => handleScrollTo(props.contactRef)}>contato</button>
             </li>
           </ul>
           {/* <button

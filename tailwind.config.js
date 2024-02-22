@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -52,11 +51,6 @@ module.exports = {
         'green-d':'#c0d6cd',
         'blue-e':'#97a4a9',
       },
-
-      shadow: {
-        'text-shadow': '2px 2px 2px rgba(0, 0, 0, 0.5)'
-      }
-      
     },fontFamily: {
       sans: ['Work Sans', 'sans-serif'],
       mono: ['VT323'],

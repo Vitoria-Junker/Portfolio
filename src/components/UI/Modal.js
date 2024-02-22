@@ -29,7 +29,7 @@ export default function Modal ({children}) {
           className='bg-green-c/90 p-2 w-full shadow-lg border-x-2 border-solid border-violet-500'>
             <div className='bg-easy/70 p-2 border-2 border-solid border-violet-500'>
               <div className="bg-white border-2 border-solid  border-violet-500">
-                <div className="content bg-pink/50">
+                <div className="content bg-[url('/planet.jpg')] bg-opacity-50 bg-cover">
                   {children}
                 </div>
              </div>

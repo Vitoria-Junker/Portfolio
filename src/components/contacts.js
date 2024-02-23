@@ -11,7 +11,7 @@ export default function Contacts() {
         <ul className="flex flex-wrap justify-center gap-4 items-center p-4 mb-20">
           <li>
             <Link 
-              href='https://www.linkedin.com/in/vit%C3%B3riajunker/' 
+              href='https://www.linkedin.com/in/vitoriajunker/' 
               target='_blank'>
                 <FaLinkedin className="w-14 h-14 text-pink-2 transition duration-300 ease-in-out transform hover:scale-110 hover:text-pink-3"/></Link>
           </li>
@@ -29,7 +29,7 @@ export default function Contacts() {
           </li>
           <li>
             <Link
-              href='vickjunker22@gmail.com' 
+              href='mailto:vickjunker22@gmail.com' 
               alt='vickjunker22@gmail.com'
               target='_blank'>
                 <MdEmail className="w-14 text-pink-2 h-14 transition duration-300 ease-in-out transform hover:scale-110 hover:text-pink-3"/></Link>

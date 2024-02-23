@@ -16,20 +16,16 @@ export default function About() {
           <div className="rounded-full border-dotted border-violet-400 border-2 w-56 h-56 li:w-64 li:h-64 md:w-80 md:h-80 shadow-xl">
             <img src="/gorroo.svg"  alt="avatar-vitoria" className="w-full rounded-full p-2 shadow-xl"></img>
           </div>
-          <span className="text-2xl text-pink"
-          style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.6)" }}>
+          <span className="text-2xl text-pink text-shadow">
              @Vitoria_junker 
           </span>
-          <strong className="text-2xl inter:text-3xl text-pink-3 p-2 font-medium"
-          style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.6)" }}
-          >
-            Desenvolvedora Web Jr
+          <strong className="text-2xl inter:text-3xl text-pink-3 p-2 font-medium text-shadow">
+            Desenvolvedora Web
           </strong>
         </div>
         <div className="pt-4 px-3 flex flex-col text-center  gap-8">
           <p 
-            className="text-lg li:text-xl px-2 font-karla text-pink"
-            style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.6)" }}>
+            className="text-lg li:text-xl px-2 font-karla text-pink text-shadow">
           Olá! Sou Vitória, Desenvolvedora Web e estudante de Sistemas para Internet.
           Animada para explorar novas tecnologias e contribuir em seu projeto.
           Atuando com Front-end e Back-end, estou comprometida em resolver problemas
@@ -55,7 +51,7 @@ export default function About() {
        </div>
       </div>
       <div className="pt-8 text-center w-full font-semibold flex flex-col justify-center items-center">
-          <h1 className="p-6 text-4xl text-pink-3">Techs</h1>
+          <h1 className="p-6 text-4xl text-pink-3 text-shadow" >Techs</h1>
           <Tecnologies />
         </div>
     </div>
